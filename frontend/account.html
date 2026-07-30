@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No-Tea Boys — Account</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">
+    <span class="word">No-Tea <em>Boys</em></span>
+  </a>
+  <nav class="links" id="navLinks">
+    <a href="about.html" class="nav-link">About</a>
+    <a href="games.html" class="nav-link">Games</a>
+    <a href="account.html" class="nav-link">Account</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <a href="account.html" class="account-btn">Sign In</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+<section id="account">
+  <div class="account-wrap">
+    <div class="account-copy">
+      <div class="eyebrow">Player accounts</div>
+      <h1 class="page-head-inline">Your table, reserved.</h1>
+      <p>Track saves, wishlist upcoming titles, and get first pour on playtests. This panel is wired up for the prototype — the real profile system (avatars, library, achievements) drops in here later.</p>
+      <div class="badge-soon">Full profile system in progress</div>
+    </div>
+    <div class="auth-panel">
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-tab="signin">Sign in</button>
+        <button class="auth-tab" data-tab="signup">Create account</button>
+      </div>
+      <form class="auth-form active" id="signin">
+        <div class="field">
+          <label for="si-email">Email</label>
+          <input type="email" id="si-email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="si-pass">Password</label>
+          <input type="password" id="si-pass" placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+        <p class="auth-note">Prototype only — no accounts are created yet.</p>
+      </form>
+      <form class="auth-form" id="signup">
+        <div class="field">
+          <label for="su-name">Display name</label>
+          <input type="text" id="su-name" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="su-email">Email</label>
+          <input type="email" id="su-email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="su-pass">Password</label>
+          <input type="password" id="su-pass" placeholder="••••••••">
+        </div>
+        <div class="field">
+            <label for="su-passCheck">Re-Enter Password</label>
+            <input type="password" id="su-passCheck" placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary">Create account</button>
+        <p class="auth-note">Prototype only — no accounts are created yet.</p>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <span class="fword">No-Tea Boys</span>
+  <span>Spill no tea. Ship good games.</span>
+  <span>&copy; 2026 No-Tea Boys Studio</span>
+</footer>
+<script src="auth.js"></script>
+<script src="script.js"></script>
+</body></html>
