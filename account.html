@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No-Tea Boys — Dispatches</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="brand">
+    <span class="word">No-Tea <em>Boys</em></span>
+  </a>
+  <nav class="links" id="navLinks">
+    <a href="about.html" class="nav-link">About</a>
+    <a href="games.html" class="nav-link">Games</a>
+    <a href="account.html" class="nav-link">Account</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<section id="account">
+  <div class="page-head">
+    <div class="eyebrow">From the studio</div>
+    <h1>Dispatches, promos &amp; works in progress.</h1>
+    <p>Loose updates from the table — plus whatever codes we're handing out this week.</p>
+  </div>
+
+  <div class="blog-layout">
+    <!-- ---------- ARTICLE SECTION ---------- -->
+    <div class="article-col">
+
+      <article class="article-card">
+        <div class="article-meta"><time>Jul 29, 2026</time> · <span>Update</span></div>
+        <h2>Prototype's up.</h2>
+        <p>First pass at the site is live. Nothing's final — colors, copy, and probably half the nav will change before we're done. If something looks broken, it's probably intentional. Probably.</p>
+        <a href="#" class="article-link">Read more →</a>
+      </article>
+
+      <article class="article-card">
+        <div class="article-meta"><time>Jul 22, 2026</time> · <span>Studio</span></div>
+        <h2>Why "No-Tea Boys"?</h2>
+        <p>Short version: we liked the pun more than we should have. Long version coming eventually, probably as an actual article and not just a placeholder paragraph like this one.</p>
+        <a href="#" class="article-link">Read more →</a>
+      </article>
+
+    </div>
+
+    <!-- ---------- PROMO CODES ---------- -->
+    <aside class="promo-col">
+      <div class="promo-panel">
+        <h2>Promo codes</h2>
+        <ul class="promo-list">
+          <li class="promo-item">
+            <strong>TEATIME</strong>
+            <p>10% off anything, whenever we actually sell something.</p>
+          </li>
+          <li class="promo-item">
+            <strong>NOSHADE</strong>
+            <p>Early playtest access — first come, first served.</p>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ---------- GAME SHOWCASE ---------- -->
+  <div class="page-head showcase-head">
+    <div class="eyebrow">In the works</div>
+    <h2>Games</h2>
+  </div>
+  <div class="showcase-grid" id="showcaseGrid"></div>
+
+</section>
+
+<footer>
+  <span class="fword">No-Tea Boys</span>
+  <span>Spill no tea. Ship good games.</span>
+  <span>&copy; 2026 No-Tea Boys Studio</span>
+</footer>
+<script src="showcase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
